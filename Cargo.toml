@@ -1,0 +1,23 @@
+[package]
+name = "fx-store"
+version = "0.1.0"
+edition = "2024"
+
+
+[dependencies]
+memmap2 = "0.9"
+chrono = "0.4"
+bincode = "2.0.1"
+zstd = "0.13"
+dashmap = "6.1.0"
+crossbeam = "0.8"
+rayon = "1.8"
+serde = { version = "1.0", features = ["derive"] }
+ahash = "0.8"
+bytes = "1.5"
+parking_lot = "0.12"
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
+panic = "abort"
