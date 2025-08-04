@@ -1,8 +1,10 @@
 # FX-Store: High-Performance Time-Series Storage for Financial Data
 
+> Disclaimer: This is a toy project in progress out of curiosity, so it doesn’t work. It seems like I’ll need to modify the codes written by the AI a lot.
+
 A production-grade, single-server solution for storing and querying foreign exchange market data, inspired by [Databento's architecture](https://databento.com/blog/real-time-tick-data) but optimized for [FX/HISTDATA](http://www.histdata.com/) workloads.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Architecture Overview](./docs/architecture.md)
 - [Getting Started](./docs/getting-started.md)
@@ -15,7 +17,7 @@ A production-grade, single-server solution for storing and querying foreign exch
 - [Deployment Guide](./docs/deployment.md)
 - [Benchmarks](./docs/benchmarks.md)
 
-## 🚀 Key Features
+## Key Features
 
 - **Single-server 37 Gbps** processing capability
 - **10:1 compression** with zstd
@@ -25,7 +27,7 @@ A production-grade, single-server solution for storing and querying foreign exch
 - **Lock-free** concurrent access
 - **SIMD-accelerated** filtering
 
-## 🏗️ Technology Stack
+## Technology Stack
 
 - **Language**: Rust
 - **Network**: AF_XDP (kernel bypass)
@@ -34,7 +36,7 @@ A production-grade, single-server solution for storing and querying foreign exch
 - **SIMD**: AVX2 for filtering operations
 - **Time Sync**: TSC + NTP calibration
 
-## 📊 Performance Highlights (Not Proven: Goal)
+## Performance Highlights (Not Proven: Goal)
 
 | Metric            | Value            |
 | ----------------- | ---------------- |
@@ -44,7 +46,7 @@ A production-grade, single-server solution for storing and querying foreign exch
 | P99 Latency       | < 100μs          |
 | Memory Usage      | 1/10 of raw data |
 
-## 🔧 Quick Start
+## Quick Start
 
 ```bash
 # Build
