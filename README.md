@@ -1,6 +1,6 @@
 # FX-Store: High-Performance Time-Series Storage for Financial Data
 
-> Disclaimer: This is a toy project in progress out of curiosity, so it doesn’t work properly as desribed here. 
+> Disclaimer: This is a toy project in progress out of curiosity, so it doesn’t work properly as desribed yet. 
 
 A production-grade, single-server solution for storing and querying foreign exchange market data, inspired by [Databento's architecture](https://databento.com/blog/real-time-tick-data) but optimized for [FX/HISTDATA](http://www.histdata.com/) workloads.
 
