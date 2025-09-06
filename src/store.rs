@@ -136,6 +136,14 @@ impl FxStore {
         }))
     }
 
+    /// Get all available symbols
+    pub fn get_symbols(&self) -> Vec<String> {
+        self.symbols
+            .iter()
+            .map(|entry| entry.key().clone())
+            .collect()
+    }
+
     /// 리얼타임 스트리밍 (tick-to-1min 집계)
     pub fn stream_realtime(&self, symbol: &str) -> Receiver<OHLCV> {
         let (tx, rx) = bounded(10000);
